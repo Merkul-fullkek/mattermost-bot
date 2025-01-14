@@ -1,0 +1,24 @@
+{
+    "type": "postgres",
+    "host": "app-db",
+    "port": 5432,
+    "username": "appuser",
+    "password": "appuser_password",
+    "database": "appdb",
+    "synchronize": true,
+    "logging": true,
+    "entities": [
+        "src/**/**.entity{.ts,.js}"
+    ],
+    "migrations": [
+        "src/app-bd/app-bd-entities/migration/**/*.ts"
+    ],
+    "subscribers": [
+        "src/subscriber/**/*.ts"
+    ],
+    "cli": {
+        "entitiesDir": "src/app-bd/app-db-entities",
+        "migrationsDir": "src/app-bd/app-db-entities/migration",
+        "subscribersDir": "src/subscriber"
+    }
+}

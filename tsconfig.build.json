@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "./bin",
+    "rootDir": "./src",
+    "tsBuildInfoFile": "./bin/tsconfig.build.tsbuildinfo"
+  },
+  "extends": [
+    "./tsconfig.json"
+  ],
+  "exclude": [
+    "tests"
+  ]
+}
